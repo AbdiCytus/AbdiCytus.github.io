@@ -1,8 +1,19 @@
+// Selector
+
 const mode = document.getElementById("mode");
+const menu = document.querySelector(".menu");
+
+// Hamburger Menu
+
+const span2 = document.getElementsByTagName("span")[1];
+const span3 = document.getElementsByTagName("span")[2];
+const span1 = document.getElementsByTagName("span")[0];
+
+// Header
 
 const body = document.querySelector("body")
 const head = document.querySelector(".head");
-const bg = document.querySelector(".head-bg");
+const bg = document.querySelector(".head")
 const nav = document.querySelector(".nav-container");
 const regards = document.querySelector(".head-h1-regards");
 const name = document.querySelector(".head-h1-name");
@@ -12,9 +23,13 @@ const github = document.querySelector(".github");
 const ig = document.querySelector(".ig");
 const email = document.querySelector(".email");
 
+// Main(About)
+
 const about = document.querySelector(".about");
 const pfpbg = document.querySelector(".profile-bg");
 const aboutTitle = document.querySelector(".about-title");
+
+// Main(Projects)
 
 const projects = document.querySelector(".projects");
 const projectsTitle = document.querySelector(".projects-title");
@@ -22,10 +37,24 @@ const cards = document.getElementsByClassName("card");
 const cardsTitle = document.getElementsByClassName("card-text");
 const cardsbtn = document.getElementsByClassName("card-btn");
 
+// System
+
+// Hamburger Menu
+
+menu.onclick = () => {
+    nav.classList.toggle("slide")
+    span2.classList.toggle("display-none")
+    span1.classList.toggle("line-1")
+    span3.classList.toggle("line-2")
+}
+
+// Dark Mode
+
 mode.onclick = () => {
     if (mode.innerHTML === "DAY") {
         mode.innerHTML = "NIGHT"
-        bg.src = "images/Header Background(dark).jpg"
+        bg.classList.add("dark-head")
+        menu.style.backgroundColor = "#212121"
         github.src = "images/github logo(white).png"
         ig.src = "images/instagram logo(white).png"
         email.src = "images/email logo(white).png"
@@ -49,7 +78,8 @@ mode.onclick = () => {
         
     } else {
         mode.innerHTML = "DAY"
-        bg.src = "images/Header Background.jpg"
+        bg.classList.remove("dark-head")
+        menu.style.backgroundColor = "#3f51b5"
         github.src = "images/github logo.png"
         ig.src = "images/instagram logo.png"
         email.src = "images/email logo.png"
