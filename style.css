@@ -63,7 +63,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: center;
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav-container {
@@ -245,7 +245,7 @@ nav {
   text-align: center;
   border-radius: 7px;
   font-family: Nevis;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
 }
 
 .projects {
@@ -304,7 +304,7 @@ nav {
   margin-top: 30px;
   background-color: #3f51b5;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .card-btn:hover {
@@ -355,7 +355,6 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
-
   /* Nav */
 
   .menu {
@@ -415,7 +414,7 @@ nav {
 
   .nav-container a {
     border-bottom: 1px solid;
-    margin: 10px 20px ;
+    margin: 10px 20px;
   }
 
   /* Head */
@@ -432,7 +431,7 @@ nav {
 
   .gab {
     height: 250px;
-    transform: translateX(90px);
+    transform: translateX(85px);
   }
 
   /* About */
@@ -586,5 +585,161 @@ nav {
     position: relative;
     font-size: 9.5px;
     top: -1.5px;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  /* Nav */
+
+  .nav-container {
+    width: 600px;
+  }
+
+  .nav-container a {
+    font-size: 130%;
+  }
+
+  /* Head */
+
+  .name-chara {
+    flex-direction: column;
+  }
+
+  .name {
+    width: 60%;
+    height: 60%;
+    left: -90px;
+    top: 80px;
+    margin: 150px 10px 10px 0;
+  }
+
+  .head-h1-regards,
+  .head-h1-name {
+    font-size: 300%;
+  }
+
+  .head-h3 {
+    font-size: 200%;
+  }
+
+  .head-parag {
+    font-size: 170%;
+    margin-bottom: 25px;
+  }
+
+  .resume {
+    padding: 10px;
+    font-size: 140%;
+  }
+
+  .github,
+  .ig {
+    height: 30px;
+  }
+
+  .email {
+    height: 40px;
+    margin-bottom: -3px;
+  }
+
+  .gab {
+    height: 410px;
+    transform: translateX(180px);
+  }
+
+  /* About */
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-bg {
+    height: 250px;
+    width: 250px;
+  }
+
+  .gab-pfp {
+    height: 250px;
+  }
+
+  .about-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-title {
+    font-size: 300%;
+    margin-top: 30px;
+    align-self: center;
+    width: 50%;
+  }
+
+  .about-paragraph {
+    font-size: 140%;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+  }
+
+  /* Projects */
+
+  .projects-title {
+    font-size: 300%;
+    width: 400px;
+    padding: 10px;
+  }
+
+  .projects-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .card5 {
+    margin-bottom: 25px;
+  }
+
+  .img-project {
+    height: 201px;
+    transform: translateY(-16px);
+    border-radius: 8px 0 0 8px;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-text h3 {
+    font-size: 200%;
+    margin: 10px 0 5px 5px;
+  }
+
+  .card-text p {
+    font-size: 20px;
+    margin: 5px 0 5px 5px;
+  }
+
+  .card-btn {
+    font-size: 120%;
+    margin: 10px 0 0 5px;
+    padding-top: 5.5px;
+    height: 35px;
+    border-radius: 5px;
   }
 }
