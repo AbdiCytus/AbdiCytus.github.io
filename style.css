@@ -31,7 +31,6 @@
 /* Raw Tags */
 body {
   background-color: white;
-  overflow-x: hidden;
 }
 
 a {
@@ -50,7 +49,7 @@ footer {
 
 /* Header Content */
 .head {
-  height: 100vh;
+  height: 95vh;
   background-image: url(images/Header\ Background.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -89,7 +88,7 @@ nav {
 /* Icon and Regards */
 .name-chara {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -145,6 +144,7 @@ nav {
   position: relative;
   height: 600px;
   left: -30px;
+  overflow-x: hidden;
 }
 
 .github,
@@ -355,6 +355,7 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
+
   /* Nav */
 
   .menu {
@@ -362,6 +363,7 @@ nav {
     width: 35px;
     height: 30px;
     padding: 1px;
+    margin: 0 5px 0 10px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -369,7 +371,6 @@ nav {
     background-color: #3f51b5;
     border-radius: 0 0 5px 5px;
     position: relative;
-    left: 25px;
     cursor: pointer;
   }
 
@@ -398,12 +399,14 @@ nav {
   .display-none {
     opacity: 0%;
   }
+
   .nav-container {
-    width: 80%;
-    height: 35vh;
+    width: 65%;
+    height: 25vh;
     border-radius: 0 0 10px 10px;
     flex-direction: column;
-    transform: translateY(-280px);
+    transform: translateY(-400px);
+    transition: all 350ms linear;
   }
 
   .slide {
@@ -412,9 +415,10 @@ nav {
 
   .nav-container a {
     border-bottom: 1px solid;
+    margin: 10px 20px ;
   }
 
-  /* Head Title */
+  /* Head */
 
   .name-chara {
     flex-direction: column;
@@ -537,8 +541,8 @@ nav {
 
   .card-btn {
     margin-top: 15px;
-    font-size: 9px;
-    height: 15px;
+    font-size: 9.5px;
+    height: 16px;
   }
 
   .card1 {
@@ -574,12 +578,12 @@ nav {
 
   .card1 .card-btn {
     margin-top: 5px;
-    height: 13px;
+    height: 16px;
   }
 
   .card1 a {
     position: relative;
-    font-size: 8px;
+    font-size: 9.5px;
     top: -1.5px;
   }
 }
