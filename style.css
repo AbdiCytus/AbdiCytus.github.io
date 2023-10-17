@@ -237,13 +237,13 @@ nav {
 
 .projects-title {
   font-size: 250%;
-  width: 350px;
+  width: 100%;
   margin-top: 100px;
-  padding: 8px;
+  padding: 10px;
   background-color: #3f51b5;
   color: white;
   text-align: center;
-  border-radius: 7px;
+  border-radius: 9px;
   font-family: Nevis;
 }
 
@@ -257,6 +257,7 @@ nav {
   width: 100%;
   padding: 30px;
   display: flex;
+  justify-content: space-between;
 }
 
 /* Card Projects */
@@ -266,13 +267,14 @@ nav {
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
   font-family: Rubik Regular;
-  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
 }
 
 .card-img {
   margin-top: 15px;
-  height: 100px;
-  text-align: center;
+  align-self: center;
 }
 
 .img-project {
@@ -467,7 +469,7 @@ nav {
 
   .projects-title {
     font-size: 200%;
-    width: 280px;
+    width: 100%;
   }
 
   .projects-section {
@@ -546,6 +548,7 @@ nav {
     margin-top: 15px;
     grid-area: project1;
     display: flex;
+    flex-direction: row;
     width: 90%;
     height: 130px;
   }
@@ -553,6 +556,7 @@ nav {
   .card1 .img-project {
     position: relative;
     height: 100px;
+    top: -5px;
     margin-left: 13px;
     border-radius: 5px;
   }
@@ -712,8 +716,9 @@ nav {
   }
 
   .img-project {
-    height: 201px;
-    transform: translateY(-16px);
+    position: relative;
+    height: 200px;
+    top: -5.5px;
     border-radius: 8px 0 0 8px;
   }
 
@@ -725,7 +730,7 @@ nav {
 
   .card-text h3 {
     font-size: 200%;
-    margin: 10px 0 5px 5px;
+    margin: 15px 0 5px 5px;
   }
 
   .card-text p {
