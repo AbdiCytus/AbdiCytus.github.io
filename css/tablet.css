@@ -3,10 +3,11 @@
   
     .nav-container {
       width: 600px;
+      gap: 60px;
     }
   
     .nav-container a {
-      font-size: 130%;
+      font-size: 100%;
     }
   
     /* Head */
@@ -97,13 +98,14 @@
   
     .projects-title {
       font-size: 300%;
-      width: 400px;
-      padding: 10px;
+      width: 100%;
+      padding: 20px;
     }
   
-    .projects-section {
+    .projects {
       padding: 10px;
       display: flex;
+      width: 100%;
       flex-direction: column;
       align-items: center;
     }
@@ -132,23 +134,29 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      padding: 15px 5px 0 5px;
     }
   
     .card-text h3 {
+      margin: 0;
       font-size: 200%;
-      margin: 15px 0 5px 5px;
     }
   
     .card-text p {
-      font-size: 20px;
-      margin: 5px 0 5px 5px;
+      font-size: 19px;
+      height: 75px;
+      margin: 5px 0;
     }
-  
+
     .card-btn {
-      font-size: 120%;
-      margin: 10px 0 0 5px;
-      padding-top: 5.5px;
-      height: 35px;
-      border-radius: 5px;
+      height: max-content;
+      width: max-content;
+      padding: 5px 10px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .card-btn a {
+      font-size: 120% ;
     }
   }

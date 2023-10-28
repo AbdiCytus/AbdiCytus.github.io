@@ -1,239 +1,274 @@
-.menu {
-    display: none;
+@media screen and (max-width: 480px) {
+  /* Nav */
+
+  .menu {
+    display: flex;
+    width: 35px;
+    height: 30px;
+    padding: 1px;
+    margin: 0 5px 0 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 50%);
+    background-color: #3f51b5;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    cursor: pointer;
   }
-  
-  @media screen and (max-width: 480px) {
-    /* Nav */
-  
-    .menu {
-      display: flex;
-      width: 35px;
-      height: 30px;
-      padding: 1px;
-      margin: 0 5px 0 10px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 50%);
-      background-color: #3f51b5;
-      border-radius: 0 0 5px 5px;
-      position: relative;
-      cursor: pointer;
-    }
-  
-    .menu span {
-      background-color: white;
-      width: 15px;
-      height: 3px;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 50%);
-    }
-  
-    .menu span:hover {
-      background-color: rgb(210, 210, 210);
-    }
-  
-    .line-1 {
-      transform: rotate(-45deg) translate(-4px);
-      transform-origin: 100% 0;
-    }
-  
-    .line-2 {
-      transform: rotate(45deg) translate(-2px);
-      transform-origin: 100% 0;
-    }
-  
-    .display-none {
-      opacity: 0%;
-    }
-  
-    .nav-container {
-      width: 65%;
-      height: 25vh;
-      border-radius: 0 0 10px 10px;
-      flex-direction: column;
-      transform: translateY(-400px);
-      transition: all 350ms linear;
-    }
-  
-    .slide {
-      transform: translateY(0.1px);
-    }
-  
-    .nav-container a {
-      border-bottom: 1px solid;
-      margin: 10px 20px;
-    }
-  
-    /* Head */
-  
-    .name-chara {
-      flex-direction: column;
-    }
-  
-    .name {
-      width: 70%;
-      left: 0px;
-      margin: 150px 10px 10px 0;
-    }
-  
-    .gab {
-      height: 250px;
-      transform: translateX(85px);
-    }
-  
-    /* About */
-  
-    .about-section {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .profile-bg {
-      height: 150px;
-      width: 150px;
-    }
-  
-    .gab-pfp {
-      height: 150px;
-    }
-  
-    .about-text {
-      align-self: flex-start;
-      width: 100%;
-    }
-  
-    .about-title {
-      font-size: 200%;
-      margin-top: 30px;
-    }
-  
-    .about-paragraph {
-      position: relative;
-      left: -10px;
-    }
-  
-    /* Projects */
-  
-    .projects-title {
-      font-size: 200%;
-      width: 100%;
-    }
-  
-    .projects-section {
-      padding: 10px;
-      display: grid;
-      grid-template-areas:
-        "project1 project1"
-        "project2 project3"
-        "project4 project5";
-    }
-  
-    .card {
-      width: 130px;
-    }
-  
-    .card2,
-    .card3,
-    .card4,
-    .card5 {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      height: 200px;
-      margin-top: 30px;
-    }
-  
-    .card2 {
-      grid-area: project2;
-    }
-  
-    .card3 {
-      grid-area: project3;
-    }
-  
-    .card4 {
-      grid-area: project4;
-    }
-  
-    .card5 {
-      grid-area: project5;
-    }
-  
-    .card4,
-    .card5 {
-      margin-bottom: 15px;
-    }
-  
-    .img-project {
-      height: 70px;
-    }
-  
-    .card-text {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: -4px;
-    }
-  
-    .card-text h3 {
-      font-size: 95%;
-      padding: 0;
-    }
-  
-    .card-text p {
-      font-size: 9px;
-      margin-top: 3px;
-    }
-  
-    .card-btn {
-      margin-top: 15px;
-      font-size: 9px;
-      height: 16px;
-    }
-  
-    .card1 {
-      margin-top: 15px;
-      grid-area: project1;
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      height: 130px;
-    }
-  
-    .card1 .img-project {
-      position: relative;
-      height: 100px;
-      top: -5px;
-      margin-left: 13px;
-      border-radius: 5px;
-    }
-  
-    .card1 .card-text {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      margin-top: 9px;
-    }
-  
-    .card1 .card-text h3 {
-      font-size: 100%;
-    }
-  
-    .card1 .card-text p {
-      font-size: 9px;
-      margin: 5px 9px 0 0;
-      width: 80%;
-    }
-  
-    .card1 .card-btn {
-      margin-top: 8px;
-      height: 16px;
-    }
-  
-    .card1 a {
-      position: relative;
-      font-size: 9.5px;
-      top: -1.5px;
-    }
+
+  .menu span {
+    background-color: white;
+    width: 15px;
+    height: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 50%);
   }
+
+  .menu span:hover {
+    background-color: rgb(210, 210, 210);
+  }
+
+  .line-1 {
+    transform: rotate(-45deg) translate(-4px);
+    transform-origin: 100% 0;
+  }
+
+  .line-2 {
+    transform: rotate(45deg) translate(-2px);
+    transform-origin: 100% 0;
+  }
+
+  .display-none {
+    opacity: 0%;
+  }
+
+  .nav-container {
+    width: 65%;
+    height: 25vh;
+    gap: 20px;
+    border-radius: 0 0 10px 10px;
+    flex-direction: column;
+    transform: translateY(-400px);
+
+    transition: all 350ms linear;
+  }
+
+  .slide {
+    transform: translateY(0.1px);
+  }
+
+  .nav-container a {
+    font-size: 70%;
+    border-bottom: 1px solid;
+    margin: 0 20px;
+  }
+
+  /* Head */
+
+  .name-chara {
+    flex-direction: column;
+  }
+
+  .name {
+    width: 70%;
+    left: 0px;
+    z-index: 1;
+    margin: 150px 10px 10px 0;
+  }
+
+  .head-h1-regards,
+  .head-h1-name {
+    font-size: 32px;
+  }
+
+  .head-h1-name {
+    font-family: Rubik Mid;
+    color: #3f51b5;
+  }
+
+  .head-h3 {
+    color: #3f51b5;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .head-parag {
+    font-family: Rubik Regular;
+    color: gray;
+    font-size: 16px;
+    margin: 10px 0 18px 0;
+  }
+
+  .github,
+  .ig {
+    height: 18px;
+  }
+
+  .email {
+    height: 26px;
+    top: 4.5px;
+  }
+
+  .gab {
+    height: 250px;
+    position: absolute;
+    transform: translateX(150px);
+  }
+
+  /* About */
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-bg {
+    height: 150px;
+    width: 150px;
+  }
+
+  .gab-pfp {
+    height: 150px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 200%;
+    align-self: center;
+  }
+
+  .about-paragraph {
+    font-size: 16px;
+    position: relative;
+    left: -10px;
+  }
+
+  /* Projects */
+
+  .projects-title {
+    font-size: 200%;
+    width: 100%;
+  }
+
+  .projects {
+    gap: 0px;
+    padding: 1px;
+    padding-bottom: 30px;
+    display: grid;
+    width: 100%;
+    height: max-content;
+    place-items: center;
+    grid-template-areas:
+      "project1 project1"
+      "project2 project3"
+      "project4 project5";
+  }
+
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .card2 {
+    grid-area: project2;
+  }
+
+  .card3 {
+    grid-area: project3;
+  }
+
+  .card4 {
+    grid-area: project4;
+  }
+
+  .card5 {
+    grid-area: project5;
+  }
+
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    margin-top: 15px;
+  }
+
+  .img-project {
+    height: 80px;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -4px;
+  }
+
+  .card-text h3 {
+    font-size: 95%;
+    padding: 0;
+  }
+
+  .card-text p {
+    font-size: 9px;
+    margin-top: 3px;
+  }
+
+  .card-btn {
+    font-size: 9px;
+    height: 16px;
+  }
+
+  .card1 {
+    margin-top: 15px;
+    grid-area: project1;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 130px;
+  }
+
+  .card1 .img-project {
+    position: relative;
+    height: 100px;
+    top: -5px;
+    margin-left: 13px;
+    border-radius: 5px;
+  }
+
+  .card1 .card-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 9px;
+  }
+
+  .card1 .card-text h3 {
+    font-size: 100%;
+  }
+
+  .card1 .card-text p {
+    font-size: 9px;
+    margin: 5px 5px 0 0;
+    width: 80%;
+  }
+
+  .card1 .card-btn {
+    height: 16px;
+  }
+
+  .card1 a {
+    position: relative;
+    font-size: 9.5px;
+    top: -1.5px;
+  }
+}
